@@ -1,0 +1,127 @@
+# === 기본 무시 항목 ===
+.DS_Store
+Thumbs.db
+
+# === 로그 파일 ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+hs_err_pid*
+replay_pid*
+
+# === 환경 파일 ===
+.env
+*.local
+.java-version
+.jenv-version
+
+# === 빌드 결과물 ===
+build/
+dist/
+dist-ssr/
+out/
+cmake-build-*/
+
+# === node, frontend 관련 ===
+node_modules/
+bower_components/
+*.sublime*
+*.vsix
+*.sw?
+
+# === Vite/React 프로젝트 관련 ===
+**/*.backup.*
+**/*.back.*
+psd
+thumb
+sketch
+
+# === Java/Gradle 관련 ===
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+.mtj.tmp/
+.gradle/
+nbbuild/
+nbdist/
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/backend/src/main/resources/application-dev.yml
+/backend/src/main/resources/application-prod.yml
+
+# === IntelliJ IDEA & JetBrains IDEs ===
+.idea/*
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/aws.xml
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/mongoSettings.xml
+.idea/replstate.xml
+.idea/sonarlint/
+.idea/httpRequests
+.idea/caches/build_file_checksums.ser
+
+# === Visual Studio Code ===
+.vscode/
+.history/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# === STS(Spring Tool Suite) ===
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# === 예외 처리 (필요한 설정/코드 스타일 유지) ===
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!.idea/codeStyles/
+!.idea/codeStyles/*
+
+# === 예외 처리: src 디렉토리 하위의 빌드/바이너리/출력 폴더는 포함 ===
+!**/src/main/**/build/
+!**/src/test/**/build/
+!**/src/main/**/out/
+!**/src/test/**/out/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# === gradle wrapper 파일 포함 예외 ===
+!gradle/wrapper/gradle-wrapper.jar
