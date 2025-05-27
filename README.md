@@ -5,4 +5,3 @@
 
 ---
 ## ERD
-![ERD Diagram](~/Ball/docs/images/erd.jpg)
