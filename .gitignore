@@ -43,6 +43,7 @@ sketch
 # === Java/Gradle 관련 ===
 *.class
 *.jar
+!gradle/wrapper/gradle-wrapper.jar
 *.war
 *.nar
 *.ear
@@ -123,8 +124,6 @@ nbdist/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-# === gradle wrapper 파일 포함 예외 ===
-!gradle/wrapper/gradle-wrapper.jar
 ### Eclipse template
 .metadata
 bin/
