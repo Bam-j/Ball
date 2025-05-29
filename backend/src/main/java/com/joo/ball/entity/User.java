@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Check;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "users_table")
@@ -33,9 +35,12 @@ public class User {
     @Column(name = "current_clicks", nullable = false)
     private BigDecimal currentClicks;
 
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "ball_id", nullable = false, unique = true)
     private BallEntity ballEntity;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Building> buildings = new ArrayList<>();
 
     @PrePersist
     public void prePersist() {
