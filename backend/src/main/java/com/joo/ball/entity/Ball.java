@@ -9,6 +9,7 @@ import org.hibernate.annotations.Check;
 
 import java.math.BigDecimal;
 
+
 @Entity
 @Table(name = "balls_table")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
