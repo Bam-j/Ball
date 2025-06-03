@@ -5,9 +5,6 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Check;
-
-import java.math.BigDecimal;
 
 
 @Entity
@@ -21,8 +18,7 @@ public class Ball {
     @Column(name = "ball_id", nullable = false, unique = true)
     private String ballId;
 
-    @Builder
-    public Ball(String ball_id) {
-        this.ball_id = ball_id;
+    public Ball(String ballId) {
+        this.ballId = ballId;
     }
 }
