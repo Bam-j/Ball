@@ -2,7 +2,6 @@ package com.joo.ball.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -17,8 +16,4 @@ public class Ball {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ball_id", nullable = false, unique = true)
     private String ballId;
-
-    public Ball(String ballId) {
-        this.ballId = ballId;
-    }
 }
