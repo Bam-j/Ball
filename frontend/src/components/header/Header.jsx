@@ -1,4 +1,4 @@
-import './Header.scss';
+import '@/components/header/Header.scss';
 
 export const Header = () => {
   const logoSrc = '';
@@ -20,5 +20,3 @@ export const Header = () => {
     </header>
   );
 };
-
-export default Header;

@@ -7,5 +7,3 @@ export const AuthLayout = () => {
     </main>
   );
 };
-
-export default AuthLayout;
