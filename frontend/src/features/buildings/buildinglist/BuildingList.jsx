@@ -1,6 +1,6 @@
-import '@/features/buildings/buildings/Buildings.scss';
+import '@/features/buildings/buildinglist/BuildingList.scss';
 
-export const Buildings = () => {
+export const BuildingList = () => {
   return (
     <div className="buildings-menu-wrapper">
       {/* Building을 반복 */}

@@ -1,5 +1,5 @@
 import { Ball } from '@/features/ball/Ball';
-import { BuildingMenu } from '@/features/buildings/buildingmenu/BuildingMenu';
+import { BuildingMenu } from '@/features/menu/buildingmenu/BuildingMenu';
 
 import '@/features/main/MainPage.scss';
 
