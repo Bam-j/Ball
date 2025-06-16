@@ -10,6 +10,6 @@ import lombok.Getter;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class SignInRequest {
 
-    String username;
-    String password;
+    private String username;
+    private String password;
 }
