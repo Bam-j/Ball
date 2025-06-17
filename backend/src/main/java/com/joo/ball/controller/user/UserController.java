@@ -16,10 +16,10 @@ public class UserController {
     private final UserCommandService userCommandService;
 
     @PatchMapping("/clicks")
-    public ResponseEntity<Object> updateClicks(@RequestBody UpdateClicksRequest updateClicksRequest) {
+    public ResponseEntity<Void> updateClicks(@RequestBody UpdateClicksRequest updateClicksRequest) {
         // frontend에서 차액 만큼만 넘김
         // updateClicks에서 차액을 이용해서 current, total clicks를 갱신
         userCommandService.updateClicks(updateClicksRequest);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.noContent().build();
     }
 }
