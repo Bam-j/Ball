@@ -6,7 +6,7 @@
 
 ---
 ## ERD
-![erd](https://github.com/user-attachments/assets/9ae3c571-a260-4af1-bec8-136a9e9e3878)
+![ball_erd](https://github.com/user-attachments/assets/6ca8d5a9-135d-4c18-822e-ac6715e8fcb7)
 
 ## 핵심 Flow
 - 페이지 기본 흐름: `회원가입 -> 로그인 -> 공 클릭`
