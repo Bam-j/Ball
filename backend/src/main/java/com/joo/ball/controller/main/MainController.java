@@ -1,6 +1,7 @@
 package com.joo.ball.controller.main;
 
 import com.joo.ball.dto.main.response.MainPageInfoResponse;
+import com.joo.ball.service.main.MainPageQueryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class MainController {
 
-    private final MainPageService mainPageService;
+    private final MainPageQueryService mainPageQueryService;
 
     @GetMapping("/")
     public ResponseEntity<MainPageInfoResponse> getMainPageInfo() {
-        MainPageInfoResponse response = mainPageService.getMainPageInfo();
+        MainPageInfoResponse response = mainPageQueryService.getMainPageInfo();
         return ResponseEntity.ok(response);
     }
 }

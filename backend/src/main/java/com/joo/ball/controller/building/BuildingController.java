@@ -2,6 +2,7 @@ package com.joo.ball.controller.building;
 
 import com.joo.ball.dto.building.request.PurchaseBuildingRequest;
 import com.joo.ball.dto.building.request.UpgradeBuildingRequest;
+import com.joo.ball.service.building.BuildingCommandService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

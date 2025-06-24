@@ -1,6 +1,7 @@
 package com.joo.ball.controller.user;
 
 import com.joo.ball.dto.user.request.UpdateClicksRequest;
+import com.joo.ball.service.user.UserCommandService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PatchMapping;
